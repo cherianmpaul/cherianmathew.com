@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.google.com/schemas/sitemap/0.84"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84
+                      http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+
+<url>
+  <loc>http://www.cherianmathew.com/</loc>
+  <priority>1.0</priority>
+  <lastmod>2006-11-22T15:39:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/home.php</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/aboutme.htm</loc>
+  <priority>1.0</priority>
+  <lastmod>2006-11-22T15:39:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/interests.htm</loc>
+  <priority>0.5</priority>
+  <lastmod>2006-11-22T15:39:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/photo.php</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/favorites.htm</loc>
+  <priority>0.5</priority>
+  <lastmod>2006-11-22T15:39:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/feedback.php</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/chat.htm</loc>
+  <priority>0.5</priority>
+  <lastmod>2006-11-22T15:39:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/guestbook.php</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/searchme.htm</loc>
+  <priority>0.5</priority>
+  <lastmod>2006-11-22T15:39:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/contact.htm</loc>
+  <priority>0.5</priority>
+  <lastmod>2006-11-22T15:39:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/tellafrnd.php</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/faq.htm</loc>
+  <priority>0.5</priority>
+  <lastmod>2006-11-22T15:39:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/emailrqst.php</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/instantmsg.php</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.cherianmathew.com/addressrqst.php</loc>
+  <priority>0.5</priority>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

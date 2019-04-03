@@ -1,0 +1,176 @@
+<?php session_start(); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+<title>CherianMathew.com - Feedback</title>
+<meta name="description" content="You can give feed back about my web site." />
+<meta name="keywords" content="feed back" />
+<meta name="designer" content="My Arts Desire/Round the Bend Wizards" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="false" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div class="wrapper">
+<table>
+<tbody>
+<tr>
+<td colspan="2" class="sitename">
+<!--webbot bot="Include" U-Include="include_sitename.htm" TAG="BODY" startspan -->
+
+Web Presence of Cherian Mathew
+<!--webbot bot="Include" i-checksum="34543" endspan --></td>
+</tr>
+<tr>
+<td colspan="2"><img src="images/mainimage.jpg" alt="main image" width="750" height="205" /></td>
+</tr>
+<tr>
+<td><img src="images/shadowleft.jpg" alt="shadow" width="250" height="15" /></td>
+<td><img src="images/shadowright.jpg" alt="shadow" width="500" height="15" /></td>
+</tr>
+<tr>
+<td class="sidebar">
+<h4>Site Menu:</h4>
+<!--webbot bot="Include" u-include="include_mainnavigation.htm" tag="BODY" startspan -->
+<div class="sidebarnav">
+<ul>
+<li><a href="home.php">Home Page</a></li>
+<li><a href="aboutme.htm">About Me</a> </li>
+<li><a href="interests.htm">Interests</a> </li>
+<li><a href="photo.php">Photo Album</a> </li>
+<li><a href="favorites.htm">Favorites</a> </li>
+<li><a href="feedback.php">Feed Back</a></li>
+<li><a href="chat.htm">Chat</a></li>
+<li><a href="guestbook.php">Guest Book</a></li>
+<li><a href="searchme.htm">Search</a></li>
+<li><a href="contact.htm">Contact Me</a></li>
+</ul>
+</div>
+<!--webbot bot="Include" i-checksum="26609" endspan --><p>
+<img src="images/hrshort.jpg" alt="horizontal bar" width="230" height="20" /></p>
+</td>
+<td class="maintext">
+<?php  
+If  ("1"=="2" and $_POST["name"]<>"" and $_POST["comments"] <>"") {
+ ?>
+<p><h4>Dear  <?php  echo $_POST["name"];  ?>,</h4></p>
+Thank you for sending me your feedback. I appreciate your time and I value your feedback very much.
+
+<p>I have received your feedback and will reply soon.<br>
+<br>
+Thank you once again. </p>
+
+<p>Cherian Mathew. </p>
+
+<?php 
+     
+$to = "cherian@cherianmathew.com";
+$subject =  "Feedback from " . $_POST["name"];
+$from = "feedback@cherianmathew.com"; 
+$headers = "From:" . $from;
+     
+$message = "Name: " . $_POST["name"] . "\n";  
+$message = $message . "Email: " . $_POST["email"] . "\n"; 
+$message = $message . "Will you visit again: " . $_POST["visit"] . "\n"; 
+$message = $message . "Heard from : " . $_POST["hear_abt"] . "\n"; 
+$message = $message . "Comments: " . $_POST["comments"] . "\n" . "\n" . "\n";
+$message = $message . "To unsubscribe or change subscriber options visit:" . "\n";
+$message = $message . "http://www.cherianmathew.com/accounts.php?em=" . $_SESSION['Email'];
+
+mail($to,$subject,$message,$headers); 
+
+}
+Else {
+ ?>
+
+<h1>Feed Back:</h1>
+<p>Tell me what you think about my web site, my character, or anything else that 
+comes to mind. I welcome all of your comments and suggestions.</p>
+<p><Font color="red"><center> ("This form has been disabled.")</center></font></p>
+<form action="feedback.php" method="post">
+  <table cellSpacing="10" cellPadding="0" width="24" border="0">
+    <tr>
+      <td vAlign="top" align="right" width="259"><font face="arial" size="-1"><b>Your first 
+      name:</b></font><br>
+      <input size="27" name="name"  class="forminput" value='<?php echo $_SESSION['Name']; ?>'> </td>
+      <td vAlign="top" align="left" width="428"><font face="arial" size="-1"><b>Your 
+      Email:</b></font><br>
+      <input size="29" name="email"  class="forminput" value=<?php echo $_SESSION['Email'];  ?>> </td>
+    </tr>
+    <tr>
+      <td width="259">&nbsp;</td>
+      <td width="428">&nbsp;</td>
+    </tr>
+    <tr>
+      <td vAlign="top" align="right" width="259"><font face="arial" size="-1"><b>Would you 
+      visit my web site again?</b><br>
+      Yes<input type="radio" value="Yes, I would visit again" name="visit"  class="forminput"> No<input type="radio" value="No, I wouldn't visit again" name="visit"  class="forminput">
+      </font></td>
+      <td vAlign="top" width="428"><font face="arial" size="-1"><b>How did you hear about my 
+      site?</b><br>
+      <input type="radio" value="Yahoo! GeoCities search" name="hear_abt"  class="forminput">Yahoo! 
+      search<br>
+      <input type="radio" value="A popular search engine" name="hear_abt"  class="forminput">A 
+      popular search engine<br>
+      <input type="radio" value="Link from another site" name="hear_abt"  class="forminput">Link 
+      from another site<br>
+      <input type="radio" value="From a friend" name="hear_abt"  class="forminput">From a friend
+      </font></td>
+    </tr>
+    <tr>
+      <td width="259">&nbsp;</td>
+      <td width="428">&nbsp;</td>
+    </tr>
+    <tr>
+      <td vAlign="top" align="middle" colSpan="2" width="677"><font face="arial" size="-1">
+      <b>If you have any comments or suggestions<br>
+      for my site please add them below: </b></font><br>
+      <textarea name="comments" rows="10" cols="52"  class="forminput"></textarea>
+      <p><p>
+<span style="font-size: 75%">
+<input type="image" src="images/buttons/buttonaddfeedback.jpg" value="Submit" name="I8" alt="click to submit form" align="left" width="100" height="20" /> </span></p> </td>
+    </tr>
+  </table>
+</form>
+<?php  }  ?>
+<p>&nbsp;</p>
+<div align="center">
+
+</div>
+<img src="images/hrlong.jpg" alt="horizontal bar" width="470" height="20" /></td>
+</tr>
+<tr>
+<td class="footerleft">
+<!--webbot bot="Include" u-include="include_copyright.htm" tag="BODY" startspan -->
+
+CherianMathew.com &copy; 2006
+
+<!--webbot bot="Include" i-checksum="16924" endspan --></td>
+<td class="footerright">
+<!--webbot bot="Include" u-include="include_footer.htm" tag="BODY" startspan -->
+
+<a href="home.php">Home</a> &bull; 
+<a href="aboutme.htm">About Me</a> &bull; 
+<a href="interests.htm">Interests</a> &bull; 
+<a href="photo.php">Photo Album</a> &bull; 
+<a href="favorites.htm">Favorites</a> &bull; 
+<a href="feedback.php">Feed Back</a> &bull; 
+<a href="chat.htm">Chat</a> &bull; 
+<a href="guestbook.php">Guest Book</a> &bull; 
+<a href="searchme.htm">Search</a> &bull; 
+<a href="contact.htm">Contact Me</a>
+<p>Graphic Design by <a href="http://www.rtbwizards.com"  target="new">Round the Bend Wizards</a></p>
+<!--webbot bot="Include" i-checksum="51495" endspan --></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+
+</html>
