@@ -1,0 +1,386 @@
+<!--<?php session_start(); ?> -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<title>CherianMathew.com - Guest Book</title>
+<meta name="description" content="This is my Guest Book. People can add their comments here which will be added to my web site." />
+<meta name="keywords" content="Guest Book" />
+<meta name="designer" content="My Arts Desire/Round the Bend Wizards" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="false" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div class="wrapper">
+<table>
+<tbody>
+<tr>
+<td colspan="2" class="sitename">
+<!--webbot bot="Include" U-Include="include_sitename.htm" TAG="BODY" startspan -->
+
+Web Presence of Cherian Mathew
+<!--webbot bot="Include" i-checksum="34543" endspan --></td>
+</tr>
+<tr>
+<td colspan="2"><img src="images/mainimage.jpg" alt="main image" width="750" height="205" /></td>
+</tr>
+<tr>
+<td><img src="images/shadowleft.jpg" alt="shadow" width="250" height="15" /></td>
+<td><img src="images/shadowright.jpg" alt="shadow" width="500" height="15" /></td>
+</tr>
+<tr>
+<td class="sidebar">
+<h4>Site Menu:</h4>
+<!--webbot bot="Include" u-include="include_mainnavigation.htm" tag="BODY" startspan -->
+<div class="sidebarnav">
+<ul>
+<li><a href="index.htm">Home Page</a></li>
+<li><a href="aboutme.htm">About Me</a> </li>
+<li><a href="interests.htm">Interests</a> </li>
+<li><a href="photo.htm">Photo Album</a> </li>
+<li><a href="favorites.htm">Favorites</a> </li>
+<li><a href="feedback.htm">Feed Back</a></li>
+<li><a href="chat.htm">Chat</a></li>
+<li><a href="guestbook.htm">Guest Book</a></li>
+<li><a href="searchme.htm">Search</a></li>
+<li><a href="contact.htm">Contact Me</a></li>
+</ul>
+</div>
+<!--webbot bot="Include" i-checksum="26609" endspan --><p>
+<img src="images/hrshort.jpg" alt="horizontal bar" width="230" height="20" /></p>
+<h4>Need Help Fast?</h4>
+<p><a href="faq.htm">Visit myr FAQs.</a> I have easy answers to the questions you ask the most.</p>
+</td>
+<td class="maintext">
+<h1>Guest Book</h1>
+<!--
+<?php 
+If ($_POST["sName"]<>"" and $_POST["sCmnt"]<>"" and $_POST["sName"]<>"..." and Trim($_POST["sHuman"])=="ther" and 1==2) {
+
+$file=fopen("guestbook.txt","w") or exit("Unable to open file!");
+
+  sName == $_POST["sName"];
+  sName == Server.HTMLEncode(sName);
+  sEmail == $_POST["sEmail"];
+  sEmail == Server.HTMLEncode(sEmail);
+  sUrl == $_POST["sUrl"];
+  sUrl == Server.HTMLEncode(sUrl);
+  sCmnt == $_POST["sCmnt"];
+  sCmnt == Server.HTMLEncode(sCmnt);
+  $New_line == "<HR><I>Posted: " . NOW . "</I><BR><b>Name:</b>" . sName . "<br><b>Email:</b>" . sEmail . "<br><b>Url:</b>" . sUrl . "<br><br><b>Comment:</b>" . sCmnt . "</HR>";
+
+  fwrite($file,$New_line);
+
+fclose($file);
+
+ ?>
+
+<p><h4>Dear  <?php  echo $_POST["sName"];  ?>,</h4></p>
+
+<p>Thank you for your comments about me. It is added to the guest book. You can 
+review it below. Thank 
+you for your valuable time. </p>
+
+<p>Regards,</p>
+
+<p>Cherian Mathew. </p>
+
+<?php } Else { ?> -->
+<p>I&#39;d like to know what you think about my web site. Please leave your comments 
+in this public guest book so I can share your thoughts with other visitors.</p>
+<p><font color="#ff0000"><b>Note</b></font>:- The comments that you give here 
+becomes the part of this website and <font color="#ff0000">can be viewed by the 
+other visitors</font> of this site. If you want to give a personal comment use 
+the feedback form or Contact me section. <font color="#ff0000">Mail me your image to add it in my guest book.</font>For 
+security purpose I have disabled direct photo upload.</p>
+
+<p><font color="#ff0000"><b>Guest book signing is disbled now.</b></font> </p>
+
+<form action="guestbook.htm" method="post">
+  <table height="305" cellSpacing="0" cellPadding="2" width="400" border="0">
+    <tr>
+      <td height="38"><font face="times" color="#996600">First Name<br>
+      <input name="sName" size="25" class="forminput" <!--value="<?php  echo $_SESSION['Name'];  ?>" -->   </font></td>
+    </tr>
+    <tr>
+      <td height="42"><font face="times" color="#996600">Email<br>
+      <input name="sEmail" size="39" class="forminput" <!--value="<?php  echo $_SESSION['Email']; ?>" -->  </font></td>
+    </tr>
+    <tr>
+      <td height="42"><font face="times" color="#996600">URL<br>
+      <input value="http://" name="sUrl" size="39" class="forminput"> </font></td>
+    </tr>
+    <tr>
+      <td height="94"><font face="times" color="#996600">Comment<br>
+      <textarea name="sCmnt" rows="5" wrap="virtual" cols="37" class="forminput"></textarea>
+      </font></td>
+    </tr>
+    <tr>
+      <td height="94"><font face="times" color="#996600">Enter the text as it is shown in the Image below:<br>
+      <input name="sHuman" size="25" class="forminput"> </font><br> <img src="images/human.JPG" </td>
+    </tr>
+
+
+    <tr>
+      <td height="49"><br>
+      <font face="times" color="#996600">
+      <input type="submit" value="Sign my Guestbook - Disabled" class="forminput"> &nbsp;&nbsp;<input type="reset" value="Clear form" class="forminput"></font></td>
+    </tr>
+  </table>
+</form>
+
+<?php  } ?>
+
+<p>
+
+
+
+<!-- GUEST BOOK COMMENTS START -->
+
+<HR><I>Posted: 1/1/2006 8:41:37 PM</I><BR><b>Name:</b>Vinoth Kumar<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>You are indeed wonderfull da.
+
+Keep in touch!!!</HR>
+<HR><I>Posted: 1/5/2006 12:32:51 PM</I><BR><b>Name:</b>Shiju<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b>http://www.nosite.com<br><br><b>Comment:</b>Hi da,
+
+Site is fine. Keep it up. 
+
+Here is a poem in Tamil:
+
+Palichu palichu thaman thundu istara,
+Achariyama than kidhu na unna pakkasolla,
+Immayosarathila kirra, Vanathu mela ikkura,
+Oru vairamari minikkunu, 
+Palichu palichu thaman thundu istara,
+
+(This is Twinkle Twinkle little start in tamil.)</HR>
+<HR><I>Posted: 1/11/2006 11:05:14 AM</I><BR><b>Name:</b>Aarthi<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>HI Mr. Cherry Brown,
+ Ur website is too gud...
+ U hav lot of talents, better dont waste them n utilize it for people who recognize it and encourage it.
+Keep up the gud work!</HR>
+<HR><I>Posted: 1/13/2006 3:23:00 AM</I><BR><b>Name:</b>harsha<br><b>Email:</b>sankar<br><b>Url:</b>http://<br><br><b>Comment:</b>ur cute and nice </HR>
+<HR><I>Posted: 1/14/2006 3:06:50 AM</I><BR><b>Name:</b>Sam<br><b>Email:</b>xxxx@autobahnuae.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Hi 
+
+Its very interesting to browse ur site. 
+
+Samuel Prabu
+
+</HR>
+<HR><I>Posted: 1/18/2006 11:00:33 PM</I><BR><b>Name:</b>Siby<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Dear Tikky,
+Wonderful website. may God bless you. kindly update with photos and videos.upholding in prayers.
+with love n prayers,
+siby</HR>
+<HR><I>Posted: 1/25/2006 7:25:11 AM</I><BR><b>Name:</b>Sheeba<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>My big bro,
+
+Good job!!! Keep goin!! I know u hav got lot of hidden treasures... and u hav brought them out thru this website..
+
+And please.. dont miss any opportunity to reveal all ur treasures that r hidden in u..
+
+GOD BLESS!!</HR>
+<HR><I>Posted: 2/24/2006 12:38:06 PM</I><BR><b>Name:</b>Prisca<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b>http://<br><br><b>Comment:</b>I really like the site........ I think it is an amaizin piece of work!!!!
+I like the leaves a lot......... and the color of the leaves when they change........
+The other features included in the site are also very interesting!!!!</HR>
+<HR><I>Posted: 2/28/2006 10:19:11 AM</I><BR><b>Name:</b>Chitra<br><b>Email:</b><br><b>Url:</b>http://<br><br><b>Comment:</b>Hai Cherian,
+Your website site is really superb.
+I know, you are very talented and creative person. All the best to come up in your life very soon.</HR>
+<HR><I>Posted: 3/7/2006 7:31:22 AM</I><BR><b>Name:</b>Anish<br><b>Email:</b>xxxx@yahoo.co.uk<br><b>Url:</b>http://www.Godwillingwillcreate.com<br><br><b>Comment:</b>Hi Tikky,
+
+Great work. May God bless you with many more talents.
+
+Please help in creating a site for the Assembly.
+
+In Christian Love,
+Anish
+</HR>
+<HR><I>Posted: 3/27/2006 10:58:47 AM</I><BR><b>Name:</b>Arvind<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>its cool as always...
+but i expect no spam mail from you...
+just joking.
+</HR>
+<HR><I>Posted: 4/2/2006 12:17:15 PM</I><BR><b>Name:</b>M.S.Subhashini<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b>http://<br><br><b>Comment:</b>Your website is simply superb. All the best for your future.</HR>
+<HR><I>Posted: 4/11/2006 1:03:16 AM</I><BR><b>Name:</b>shiju<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b><br><br><b>Comment:</b>hi, its good,the photos are good,update with ur family photo,Bye
+</HR>
+<HR><I>Posted: 4/29/2006 11:05:16 AM</I><BR><b>Name:</b>Milton<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Hai Tikki How are you ? This is milton brother in low of Wilson cheriyan</HR>
+<HR><I>Posted: 5/20/2006 4:37:54 PM</I><BR><b>Name:</b>Ram<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Hey Cherry.. I've never visited your website before.. but i now regret it. anyway here i am today.. U are a great person daaa.Hope you don't forget me.. coz it was me who forcefully made you remove your moushtache..hehehehe.... You look awesome daaa....<br>
+Ram,,...</HR>
+<HR><I>Posted: 6/11/2006 1:33:54 AM</I><BR><b>Name:</b>Anjana<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Hi Cherian,
+Your website is really good.Guess its ur hidden talent .utilize this talent &amp; Iam sure u ll come in life.
+All the very best ...........</HR>
+<HR><I>Posted: 6/14/2006 5:08:50 AM</I><BR><b>Name:</b>Gauri<br><b>Email:</b><br><b>Url:</b>http://<br><br><b>Comment:</b> I can understand ur frustration, however... this is a nice website</HR>
+<HR><I>Posted: 6/14/2006 5:51:27 AM</I><BR><b>Name:</b>Sangeetha<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Crores coming Crores going, keep up the good work. </HR>
+<HR><I>Posted: 7/16/2006 11:52:22 AM</I><BR><b>Name:</b>Rakesh<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Cherry,
+          sollavai ela !!!! </HR>
+<HR><I>Posted: 8/13/2006 9:40:59 AM</I><BR><b>Name:</b>Vennila<br><b>Email:</b><br><b>Url:</b>http://<br><br><b>Comment:</b>Actually I did not know to use it. So let me first browse it and reply you.</HR>
+<HR><I>Posted: 8/18/2006 6:57:56 AM</I><BR><b>Name:</b> Kevin<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>The website is quiet good. try to be ore innovative about the web pages. Another question,  why isn't Shiju's photo  posted. </HR>
+<HR><I>Posted: 8/31/2006 11:36:52 PM</I><BR><b>Name:</b>Saji<br><b>Email:</b>sajisam_anchal.com<br><b>Url:</b>http://<br><br><b>Comment:</b>site looks wonderful!
+I want to visit madras, can you be my guide?
+
+</HR>
+<HR><I>Posted: 10/29/2006 3:56:55 AM</I><BR><b>Name:</b>harsha<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b>http://<br><br><b>Comment:</b>its realy wonderful except the chat . u hav done a gr8 job , keep going ... all d best </HR>
+<HR><I>Posted: 10/30/2006 8:42:12 PM</I><BR><b>Name:</b>Jesly<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b>http://<br><br><b>Comment:</b>Exceptionally good piece of work
+
+Good job!!!</HR>
+<HR><I>Posted: 11/1/2006 12:30:03 PM</I><BR><b>Name:</b>Sam Jones<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://samjonz.blogspot.com<br><br><b>Comment:</b>Site really Rocks...Anyway whose bike is that...!@#$%%^Keep up the good work...Looking forward to see somemore inventions like these...</HR>
+<HR><I>Posted: 11/2/2006 10:47:07 AM</I><BR><b>Name:</b>A.Abdul<br><b>Email:</b>xxxx@sancharnet.in<br><b>Url:</b>http://www.namindia.org<br><br><b>Comment:</b>Please pray for our ministry</HR>
+<HR><I>Posted: 11/19/2006 11:21:33 AM</I><BR><b>Name:</b>siva<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Your Web Site to good and attractive..
+
+ I am pray to god to achive more in our ocen of Computer field...
+     bye
+   Siva
+ </HR>
+<HR><I>Posted: 11/22/2006 8:51:31 AM</I><BR><b>Name:</b>susan. eapen<br><b>Email:</b><br><b>Url:</b>http://<br><br><b>Comment:</b>WOW! You are getting better and better everyday. Absolutely great job you did with your website! Everytime I enter your website it looks different and you have done something creative and excellent this time.
+
+God Bless!</HR>
+<HR><I>Posted: 11/25/2006 3:15:49 AM</I><BR><b>Name:</b>Sreejith Kumar<br><b>Email:</b>xxxx@sreejith.info<br><b>Url:</b>http://<br><br><b>Comment:</b>Very nicely maintained! </HR>
+<HR><I>Posted: 11/27/2006 6:48:21 AM</I><BR><b>Name:</b>Alex<br><b>Email:</b>xxxx@hotmail.com<br><b>Url:</b>http://philososphyofalex.blogspot.com/<br><br><b>Comment:</b>Hope you fulfill your wishes!</HR>
+<HR><I>Posted: 12/10/2006 9:42:00 AM</I><BR><b>Name:</b>preeth nandhu<br><b>Email:</b>xxxx@rediffmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>keep in touch </HR>
+<HR><I>Posted: 12/24/2006 1:46:31 AM</I><BR><b>Name:</b>rajaram<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://idonthaveanurl.com<br><br><b>Comment:</b>To my humble friend-may you never be alone always... 'coz i'll be there to pester you always!! </HR>
+<HR><I>Posted: 12/25/2006 10:29:55 AM</I><BR><b>Name:</b>Cherry<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b>http://<br><br><b>Comment:</b>Hey hi....
+reallly so cool website...good work..Try to put more things realaing computer and the internet..</HR>
+<HR><I>Posted: 12/29/2006 7:05:49 AM</I><BR><b>Name:</b>REBECCA<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b>http://<br><br><b>Comment:</b>Hi dear i visited ur website its really wonderfull keep it up.God bless.</HR>
+<HR><I>Posted: 1/17/2007 6:28:51 PM</I><BR><b>Name:</b>Bless n Niss <br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://u've_gotta_make_me_one.com :)<br><br><b>Comment:</b>Hai Achacha =)
+
+Awsum site!!...I'm glad i got to know u
+Keep up the good work... May God bless u so much in watever u do...n continue to help u to be a blessing for ppl around u...tc</HR>
+<HR><I>Posted: 1/18/2007 5:10:33 AM</I><BR><b>Name:</b>sangeetha B<br><b>Email:</b>xxxx@yahoo.co.in<br><b>Url:</b>http://<br><br><b>Comment:</b>Be like the cherry on a cake that enhances its taste. Add sweetness to everyone's life.</HR>
+<HR><I>Posted: 1/21/2007 1:15:49 AM</I><BR><b>Name:</b>Sumithra R<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Hey nice website... Good work!</HR>
+<HR><I>Posted: 2/16/2007 3:56:50 AM</I><BR><b>Name:</b>asaba <br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>I LOVE THIS PAGE. IT LOOKS REALLY NICE AND GOOD. KEEP IT UP.</HR>
+<HR><I>Posted: 3/5/2007 8:02:00 PM</I><BR><b>Name:</b>raji<br><b>Email:</b>xxxx@rediffmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Good job!!!</HR>
+<HR><I>Posted: 6/9/2007 9:23:49 AM</I><BR><b>Name:</b>Raghav<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Good site Buddy. Upload ur WouldB Foto, Once engagement is Over. </HR>
+<HR><I>Posted: 6/15/2007 10:54:07 AM</I><BR><b>Name:</b>Sheila<br><b>Email:</b>xxxx@hotmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>I am so glad to have met you and glad that you will wed my husband's cousin Blessy.  We look forward to the times we will share in USA. God bless you.  signed Sheila Stanley</HR>
+<HR><I>Posted: 6/23/2007 4:36:17 AM</I><BR><b>Name:</b>Jayaprakash Ramasamy<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>The web site is a good attempt to keep all of us informed about you and your surroundings. I like it very much.</HR>
+<HR><I>Posted: 7/2/2007 10:19:17 AM</I><BR><b>Name:</b>Vinod Kumar<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Congratulations for Your marriage. Wish you a happy and prosperous married life.
+ 
+Your website is really good.
+Keep in touch
+Vinod,
+</HR>
+<HR><I>Posted: 7/29/2007 9:31:46 PM</I><BR><b>Name:</b>Debbie Forrest<br><b>Email:</b>xxxx@springisd.org<br><b>Url:</b>http://<br><br><b>Comment:</b>The photos are awesome. Thank you for sharing.   Blessy, you are a beautiful bride.  Wishing both of you a long, happy, prosperous life together.
+ Love and Hugs, Mrs. Forrest</HR>
+<HR><I>Posted: 7/30/2007 3:23:47 AM</I><BR><b>Name:</b>P. Joseph Raju<br><b>Email:</b>xxxx@wayne.edu<br><b>Url:</b>http://<br><br><b>Comment:</b>Dear Cherian:
+
+You may surprised to know that your Grandpa Cherian Sir is part of our big family. He and his family lived in Kuriannoor where I am from and also your father-in-law. So, we know him from our childhood.  He had a deep influence in my life.  During his visits in US I have spent lot of time and even vidoed little life story of him.
+
+I am very happy that you are married to my first cousin's daughter, Blessy.  You are really blessed by Blessy.  This is the biggest gift that you can get on this earth.  Looking forward to seeing you soon.
+
+I know your dad is a great servant of God.  God is honored through his life and testimony.
+
+May God bless you and Blessy.  Our prayers are with you.
+
+Affectionately,
+Raju uncle</HR>
+<HR><I>Posted: 8/17/2007 5:03:33 PM</I><BR><b>Name:</b>MGBADA<br><b>Email:</b>xxxx@ABA.COM<br><b>Url:</b>http://WWW.ABA.COM<br><br><b>Comment:</b>I LOVE THIS PAGE. KEEP UP THE GOOD WORK.</HR>
+<HR><I>Posted: 8/19/2007 8:51:29 PM</I><BR><b>Name:</b>baplu<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>ur work is marvellous.nenga inga irukka cendiyavungale illa machan..............u r great dude</HR>
+<HR><I>Posted: 10/1/2007 4:03:20 PM</I><BR><b>Name:</b>its me!<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>halu matt,
+
+   well its nice to hear that ur married now and im very happy for both of u. best wishes and good luck!!!
+i've known u for almost a years though  we've lost our contact but now we got our comm. again and its great to have u back again freind.
+ur wife looks simple yet beautiful,,,
+
+its mhe,
+kristine emerald<br>
+<img src="images/kristine.jpg"></HR>
+<HR><I>Posted: 11/15/2007 1:42:26 AM</I><BR><b>Name:</b>Nitin<br><b>Email:</b>xxxx@rediffmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Hey dude! When did you study in PMS, and when did you leave? Please let me know the year you left, and which class you were in, then!</HR>
+<HR><I>Posted: 11/19/2007 4:32:22 PM</I><BR><b>Name:</b>anila<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Want to check if Blessy is a friend from kindergarten</HR>
+<HR><I>Posted: 11/21/2007 7:55:40 PM</I><BR><b>Name:</b>ganesh<br><b>Email:</b>xxxx@allsectech.com<br><b>Url:</b>http://<br><br><b>Comment:</b>hi cherian,
+
+how are you?
+what are you doing?
+
+where are you marriage photos?
+
+regards,
+c.ganesh</HR>
+<HR><I>Posted: 12/27/2007 8:47:24 PM</I><BR><b>Name:</b>cherian m  t<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://www.alappuzhaonline.com<br><br><b>Comment:</b>best of lucks</HR>
+<HR><I>Posted: 1/17/2008 7:07:29 PM</I><BR><b>Name:</b>Jamuna<br><b>Email:</b>xxxx@suzlon.com<br><b>Url:</b>http://<br><br><b>Comment:</b>Hi
+How are you?
+How is Rachel?
+Hope u wil remember me.
+I am Rachel's close friend.
+Can you pls give her number.
+Convey my regards.
+
+Jamuna</HR>
+<HR><I>Posted: 1/29/2008 8:35:10 PM</I><BR><b>Name:</b>maga mugu <br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://www.ase.com<br><br><b>Comment:</b>i love this site please keep on the gopod work</HR>
+<HR><I>Posted: 2/4/2008 10:36:53 PM</I><BR><b>Name:</b>Robin Johnson<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://www.robinkly.co.cc<br><br><b>Comment:</b>achachan, 
+              smile a while
+          and while you smile
+              there will be 
+            miles and miles
+                of smiles</HR>
+<HR><I>Posted: 2/15/2008 12:21:30 PM</I><BR><b>Name:</b>D JOHN MOSES<br><b>Email:</b>xxxx@gmail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>May God bless you sir,</HR>
+<HR><I>Posted: 2/17/2008 11:37:57 PM</I><BR><b>Name:</b>Adam Smith<br><b>Email:</b>xxxx@googlemail.com<br><b>Url:</b>http://<br><br><b>Comment:</b>nice site!</HR>
+<HR><I>Posted: 3/11/2008 10:37:46 AM</I><BR><b>Name:</b>Dennis<br><b>Email:</b>xx@yahoo.com<br><b>Url:</b>http://bondagebreaker.info<br><br><b>Comment:</b>Hi ended up on your sirte thru WA saw you are a believer and send my love in Christ. I am new to IM and am a pastor in US trying to earn a little more income retirement. May God bless.</HR>
+<HR><I>Posted: 11/11/2008 2:27:14 PM</I><BR><b>Name:</b>boaz philip<br><b>Email:</b>xxxx@yahoo.com<br><b>Url:</b>http://<br><br><b>Comment:</b>may God use ur technical skills for the extension of His Kingdom which brings glory to Him</HR>
+
+
+
+<!-- GUEST BOOK COMMENTS END -->
+
+
+
+
+<!--
+<?php 
+$file=fopen("guestbook.txt","r") or exit("Unable to open file!");
+
+while (!feof($file))
+  {    ?>
+<br>
+    <?php $S=fgets($file);
+for ($I=1; $I<=(strlen($S)-13); $I++) {
+If (substr($S,$I,13) == "<br><b>Email:") { 
+For ($J = ($I+13); $J < strlen($S); $J++) {
+    If (substr($S,$J,4) == "<br>") { 
+     $S = substr($S,0,$I+17)  . " Hidden " . substr($S,-(strlen($S)-$J));
+     $J = strlen($S);
+      }
+    } 
+  }
+} 
+ ?>
+
+<?php echo $S ?>
+    <?php 
+    }
+
+    fclose($file);
+ ?>
+-->
+
+</p>
+<img src="images/hrlong.jpg" alt="horizontal bar" width="470" height="20" /></td>
+</tr>
+<tr>
+<td class="footerleft">
+<!--webbot bot="Include" u-include="include_copyright.htm" tag="BODY" startspan -->
+
+CherianMathew.com &copy; 2006
+
+<!--webbot bot="Include" i-checksum="16924" endspan --></td>
+<td class="footerright">
+<!--webbot bot="Include" u-include="include_footer.htm" tag="BODY" startspan -->
+
+<a href="index.htm">Home</a> &bull; 
+<a href="aboutme.htm">About Me</a> &bull; 
+<a href="interests.htm">Interests</a> &bull; 
+<a href="photo.htm">Photo Album</a> &bull; 
+<a href="favorites.htm">Favorites</a> &bull; 
+<a href="feedback.htm">Feed Back</a> &bull; 
+<a href="chat.htm">Chat</a> &bull; 
+<a href="guestbook.htm">Guest Book</a> &bull; 
+<a href="searchme.htm">Search</a> &bull; 
+<a href="contact.htm">Contact Me</a>
+<p>Graphic Design by <a href="http://www.rtbwizards.com"  target="new">Round the Bend Wizards</a></p>
+<!--webbot bot="Include" i-checksum="51495" endspan --></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+
+</html>

@@ -12,7 +12,7 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.cherianmathew.com/home.php</loc>
+  <loc>http://www.cherianmathew.com/index.htm</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
@@ -29,7 +29,7 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.cherianmathew.com/photo.php</loc>
+  <loc>http://www.cherianmathew.com/photo.htm</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
@@ -40,7 +40,7 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.cherianmathew.com/feedback.php</loc>
+  <loc>http://www.cherianmathew.com/feedback.htm</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
@@ -51,7 +51,7 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.cherianmathew.com/guestbook.php</loc>
+  <loc>http://www.cherianmathew.com/guestbook.htm</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
@@ -68,7 +68,7 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.cherianmathew.com/tellafrnd.php</loc>
+  <loc>http://www.cherianmathew.com/tellafrnd.htm</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
@@ -79,17 +79,17 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.cherianmathew.com/emailrqst.php</loc>
+  <loc>http://www.cherianmathew.com/emailrqst.htm</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.cherianmathew.com/instantmsg.php</loc>
+  <loc>http://www.cherianmathew.com/instantmsg.htm</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.cherianmathew.com/addressrqst.php</loc>
+  <loc>http://www.cherianmathew.com/addressrqst.htm</loc>
   <priority>0.5</priority>
   <changefreq>monthly</changefreq>
 </url>

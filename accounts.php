@@ -39,14 +39,14 @@ Web Presence of Cherian Mathew
 <!--webbot bot="Include" u-include="include_mainnavigation.htm" tag="BODY" startspan -->
 <div class="sidebarnav">
 <ul>
-<li><a href="home.php">Home Page</a></li>
+<li><a href="index.htm">Home Page</a></li>
 <li><a href="aboutme.htm">About Me</a> </li>
 <li><a href="interests.htm">Interests</a> </li>
-<li><a href="photo.php">Photo Album</a> </li>
+<li><a href="photo.htm">Photo Album</a> </li>
 <li><a href="favorites.htm">Favorites</a> </li>
-<li><a href="feedback.php">Feed Back</a></li>
+<li><a href="feedback.htm">Feed Back</a></li>
 <li><a href="chat.htm">Chat</a></li>
-<li><a href="guestbook.php">Guest Book</a></li>
+<li><a href="guestbook.htm">Guest Book</a></li>
 <li><a href="searchme.htm">Search</a></li>
 <li><a href="contact.htm">Contact Me</a></li>
 </ul>
@@ -85,14 +85,14 @@ CherianMathew.com &copy; 2006
 <td class="footerright">
 <!--webbot bot="Include" u-include="include_footer.htm" tag="BODY" startspan -->
 
-<a href="home.php">Home</a> &bull; 
+<a href="index.htm">Home</a> &bull; 
 <a href="aboutme.htm">About Me</a> &bull; 
 <a href="interests.htm">Interests</a> &bull; 
-<a href="photo.php">Photo Album</a> &bull; 
+<a href="photo.htm">Photo Album</a> &bull; 
 <a href="favorites.htm">Favorites</a> &bull; 
-<a href="feedback.php">Feed Back</a> &bull; 
+<a href="feedback.htm">Feed Back</a> &bull; 
 <a href="chat.htm">Chat</a> &bull; 
-<a href="guestbook.php">Guest Book</a> &bull; 
+<a href="guestbook.htm">Guest Book</a> &bull; 
 <a href="searchme.htm">Search</a> &bull; 
 <a href="contact.htm">Contact Me</a>
 <p>Graphic Design by <a href="http://www.rtbwizards.com"  target="new">Round the Bend Wizards</a></p>

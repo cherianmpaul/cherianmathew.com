@@ -38,14 +38,14 @@ Web Presence of Cherian Mathew
 <!--webbot bot="Include" u-include="include_mainnavigation.htm" tag="BODY" startspan -->
 <div class="sidebarnav">
 <ul>
-<li><a href="home.php">Home Page</a></li>
+<li><a href="index.htm">Home Page</a></li>
 <li><a href="aboutme.htm">About Me</a> </li>
 <li><a href="interests.htm">Interests</a> </li>
-<li><a href="photo.php">Photo Album</a> </li>
+<li><a href="photo.htm">Photo Album</a> </li>
 <li><a href="favorites.htm">Favorites</a> </li>
-<li><a href="feedback.php">Feed Back</a></li>
+<li><a href="feedback.htm">Feed Back</a></li>
 <li><a href="chat.htm">Chat</a></li>
-<li><a href="guestbook.php">Guest Book</a></li>
+<li><a href="guestbook.htm">Guest Book</a></li>
 <li><a href="searchme.htm">Search</a></li>
 <li><a href="contact.htm">Contact Me</a></li>
 </ul>
@@ -53,7 +53,7 @@ Web Presence of Cherian Mathew
 <!--webbot bot="Include" i-checksum="26609" endspan --><p>
 <img src="images/hrshort.jpg" alt="horizontal bar" width="230" height="20" /></p>
 <h4>
-<a href="tellafrnd.php">
+<a href="tellafrnd.htm">
 <img alt="Tell to your friends about my website" src="images/TELL_A_F.gif" align="left" border="0" width="123" height="17"></a></h4>
 <p>&nbsp;</p>
 <h4 align="left"> Verse of the day:</h4>
@@ -131,8 +131,8 @@ more about me. I have created this website for my friends to keep in touch and
 to express myself wholly to them, who reside worldwide. Hence don&#39;t forget to 
 contact me after you view this site. </p>
 <p>If it is your first time you visit this site don&#39;t forget to give your 
-comment in my <a href="guestbook.php">Guest book</a>. You can also use the 
-<a href="feedback.php">Feedback</a> form to send Instant 
+comment in my <a href="guestbook.htm">Guest book</a>. You can also use the 
+<a href="feedback.htm">Feedback</a> form to send Instant 
 messages to me. You can join my e-friends&#39; club and keep in touch with me.</p>
 <p>Regards,</p>
 <p>Cherian Mathew.</p>
@@ -169,14 +169,14 @@ CherianMathew.com &copy; 2006
 <td class="footerright">
 <!--webbot bot="Include" u-include="include_footer.htm" tag="BODY" startspan -->
 
-<a href="home.php">Home</a> &bull; 
+<a href="index.htm">Home</a> &bull; 
 <a href="aboutme.htm">About Me</a> &bull; 
 <a href="interests.htm">Interests</a> &bull; 
-<a href="photo.php">Photo Album</a> &bull; 
+<a href="photo.htm">Photo Album</a> &bull; 
 <a href="favorites.htm">Favorites</a> &bull; 
-<a href="feedback.php">Feed Back</a> &bull; 
+<a href="feedback.htm">Feed Back</a> &bull; 
 <a href="chat.htm">Chat</a> &bull; 
-<a href="guestbook.php">Guest Book</a> &bull; 
+<a href="guestbook.htm">Guest Book</a> &bull; 
 <a href="searchme.htm">Search</a> &bull; 
 <a href="contact.htm">Contact Me</a>
 <p>Graphic Design by <a href="http://www.rtbwizards.com"  target="new">Round the Bend Wizards</a></p>

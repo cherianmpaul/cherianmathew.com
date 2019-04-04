@@ -1,0 +1,236 @@
+<!--<?php session_start(); ?> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+<title>CherianMathew.com - Feedback</title>
+<meta name="description" content="Send Instant messages to me from my website" />
+<meta name="keywords" content="Instant Message" />
+<meta name="designer" content="My Arts Desire/Round the Bend Wizards" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="false" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div class="wrapper">
+<table>
+<tbody>
+<tr>
+<td colspan="2" class="sitename">
+<!--webbot bot="Include" U-Include="include_sitename.htm" TAG="BODY" startspan -->
+
+Web Presence of Cherian Mathew
+<!--webbot bot="Include" i-checksum="34543" endspan --></td>
+</tr>
+<tr>
+<td colspan="2"><img src="images/mainimage.jpg" alt="main image" width="750" height="205" /></td>
+</tr>
+<tr>
+<td><img src="images/shadowleft.jpg" alt="shadow" width="250" height="15" /></td>
+<td><img src="images/shadowright.jpg" alt="shadow" width="500" height="15" /></td>
+</tr>
+<tr>
+<td class="sidebar">
+<h4>Site Menu:</h4>
+<!--webbot bot="Include" u-include="include_mainnavigation.htm" tag="BODY" startspan -->
+<div class="sidebarnav">
+<ul>
+<li><a href="index.htm">Home Page</a></li>
+<li><a href="aboutme.htm">About Me</a> </li>
+<li><a href="interests.htm">Interests</a> </li>
+<li><a href="photo.htm">Photo Album</a> </li>
+<li><a href="favorites.htm">Favorites</a> </li>
+<li><a href="feedback.htm">Feed Back</a></li>
+<li><a href="chat.htm">Chat</a></li>
+<li><a href="guestbook.htm">Guest Book</a></li>
+<li><a href="searchme.htm">Search</a></li>
+<li><a href="contact.htm">Contact Me</a></li>
+</ul>
+</div>
+<!--webbot bot="Include" i-checksum="26609" endspan --><p>
+<img src="images/hrshort.jpg" alt="horizontal bar" width="230" height="20" /></p>
+</td>
+<td class="maintext">
+
+<!--
+<?php  
+If  ($_POST["Contact_FullName"]<>"" and $_POST["message"] <>"") {
+ ?>
+<p><h4>Dear  <?php  echo $_POST["Contact_FullName"];  ?>,</h4></p>
+Thank you for sending me your&nbsp; message. I appreciate your time. I have received your 
+message and will reply soon.<br>
+<br>
+Thank you once again.
+
+<p>Cherian Mathew. </p>
+
+
+<?php 
+     
+$to = "cherian@cherianmathew.com";
+$subject =  "Instant Message from " . $_POST["Contact_FullName"];
+$from = "instantmsg@cherianmathew.com";  
+$headers = "From:" . $from;     
+
+$message = "Message : " . $_POST["message"] . "\n" . "\n";
+$message = $message . "Name : " . $_POST["Contact_FullName"] . "\n";
+$message = $message . "Address1 : " . $_POST["Contact_StreetAddress"] . "\n";
+$message = $message . "Address2 : " . $_POST["Contact_StreetAddress2"] . "\n";
+$message = $message . "City : " . $_POST["Contact_City"] . "\n";
+$message = $message . "State : " . $_POST["Contact_State"] . "\n";
+$message = $message . "Zip : " . $_POST["Contact_ZipCode"] . "\n";
+$message = $message . "Country : " . $_POST["Contact_Country"] . "\n";
+$message = $message . "Home Phone : " . $_POST["Contact_HomePhone"] . "\n";
+$message = $message . "Fax : " . $_POST["Contact_FAX"] . "\n";
+$message = $message . "Email : " . $_POST["Contact_Email"] . "\n";
+$message = $message . "URL : " . $_POST["Contact_URL"] . "\n" . "\n" . "\n";
+$message = $message . "To unsubscribe or change subscriber options visit:" . "\n";
+$message = $message . "http://www.cherianmathew.com/accounts.php?em=" . $_SESSION['Email'];
+
+mail($to,$subject,$message,$headers);
+
+}
+Else {
+ ?>
+-->
+
+<h1>Instant Message:</h1>
+<p>Please enter your message in the box provided. Please provide the contact 
+information so that I can reply to your message. All the fields are not required please fill in which ever you wish to give
+me. </p>
+<form method=POST action="instantmsg.htm">
+<BLOCKQUOTE>
+<P>
+<TEXTAREA NAME="message" ROWS=5 COLS=46  class="forminput"></TEXTAREA>
+<BR>
+</P>
+</BLOCKQUOTE>
+<P>
+Please provide the following contact information: (Optional)</P>
+<BLOCKQUOTE>
+<TABLE>
+<TR>
+<TD ALIGN="right">
+<EM>Name</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_FullName" SIZE=35  class="forminput"> <!-- value="<?php echo $_SESSION['Name']; ?>" -->
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>Street Address</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_StreetAddress" SIZE=35  class="forminput">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>Address (cont.)</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_Address2" SIZE=35  class="forminput">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>City</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_City" SIZE=35  class="forminput">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>State/Province</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_State" SIZE=35  class="forminput">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>Zip/Postal Code</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_ZipCode" SIZE=12 MAXLENGTH=12  class="forminput">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>Country</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_Country" SIZE=25  class="forminput">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>Home Phone</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_HomePhone" SIZE=25 MAXLENGTH=25  class="forminput">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>FAX</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_FAX" SIZE=25 MAXLENGTH=25  class="forminput">
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>E-mail</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_Email" SIZE=25  class="forminput"> <!-- value=<?php echo $_SESSION['Email'];  ?> -->
+</TD>
+</TR>
+<TR>
+<TD ALIGN="right">
+<EM>URL</EM></TD>
+<TD>
+<INPUT TYPE=TEXT NAME="Contact_URL" SIZE=25 MAXLENGTH=25  class="forminput">
+</TD>
+</TR>
+</TABLE>
+</BLOCKQUOTE>
+<INPUT TYPE=SUBMIT VALUE="Send message"  class="forminput">
+<INPUT TYPE=RESET VALUE="Reset message"  class="forminput">
+
+</FORM>
+
+<!-- <?php  }  ?> -->
+
+<p>&nbsp;</p>
+<div align="center">
+
+</div>
+<img src="images/hrlong.jpg" alt="horizontal bar" width="470" height="20" /></td>
+</tr>
+<tr>
+<td class="footerleft">
+<!--webbot bot="Include" u-include="include_copyright.htm" tag="BODY" startspan -->
+
+CherianMathew.com &copy; 2006
+
+<!--webbot bot="Include" i-checksum="16924" endspan --></td>
+<td class="footerright">
+<!--webbot bot="Include" u-include="include_footer.htm" tag="BODY" startspan -->
+
+<a href="index.htm">Home</a> &bull; 
+<a href="aboutme.htm">About Me</a> &bull; 
+<a href="interests.htm">Interests</a> &bull; 
+<a href="photo.htm">Photo Album</a> &bull; 
+<a href="favorites.htm">Favorites</a> &bull; 
+<a href="feedback.htm">Feed Back</a> &bull; 
+<a href="chat.htm">Chat</a> &bull; 
+<a href="guestbook.htm">Guest Book</a> &bull; 
+<a href="searchme.htm">Search</a> &bull; 
+<a href="contact.htm">Contact Me</a>
+<p>Graphic Design by <a href="http://www.rtbwizards.com"  target="new">Round the Bend Wizards</a></p>
+<!--webbot bot="Include" i-checksum="51495" endspan --></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</body>
+
+</html>
